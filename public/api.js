@@ -1,5 +1,6 @@
 const API = {
   async getLastWorkout() {
+    return 
     let res;
     try {
       res = await fetch("/api/workouts");
@@ -26,6 +27,7 @@ const API = {
     return json;
   },
   async createWorkout(data = {}) {
+    return
     const res = await fetch("/api/workouts", {
       method: "POST",
       body: JSON.stringify(data),
