@@ -1,7 +1,8 @@
 let mongoose = require("mongoose");
 let db = require("../models");
-
-mongoose.connect("mongodb://localhost/workout", {
+const { Schema } = mongoose;
+// need to make a model or a schema for the databse using mongoose 
+mongoose.connect('mongodb+srv://cacost5695:Password@cluster0.mrew3.mongodb.net/cristina-fitness-tracker?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useFindAndModify: false
 });

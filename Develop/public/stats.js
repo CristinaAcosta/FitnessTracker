@@ -181,7 +181,7 @@ function calculateTotalWeight(data) {
       if (type === 'resistance') {
         return total + weight;
       } else {
-        return total;
+        return total
       }
     }, 0);
 
